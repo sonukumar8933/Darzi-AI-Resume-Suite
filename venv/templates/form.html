@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Bot</title>
+</head>
+<body>
+    <h2>🧠 Resume Assistant</h2>
+    <form method="POST" action="/submit_resume_data">
+        <label>Full Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Aspiration:</label><br>
+        <input type="text" name="aspiration"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if suggestions %}
+        <h3>Suggested Skills:</h3>
+        <ul>
+            {% for skill in suggestions %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
