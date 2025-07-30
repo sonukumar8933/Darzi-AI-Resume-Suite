@@ -5,37 +5,37 @@
 @layer base {
   :root {
     /* M3 Theme - Light Mode */
-    --md-sys-color-primary: 251 100% 90%;
-    --md-sys-color-on-primary: 250 40% 30%;
-    --md-sys-color-primary-container: 250 40% 40%;
-    --md-sys-color-on-primary-container: 250 80% 95%;
-    --md-sys-color-secondary: 250 20% 85%;
-    --md-sys-color-on-secondary: 250 20% 25%;
-    --md-sys-color-secondary-container: 250 20% 40%;
-    --md-sys-color-on-secondary-container: 250 20% 95%;
-    --md-sys-color-tertiary: 340 100% 90%;
-    --md-sys-color-on-tertiary: 340 40% 30%;
-    --md-sys-color-tertiary-container: 340 40% 45%;
-    --md-sys-color-on-tertiary-container: 340 80% 95%;
-    --md-sys-color-error: 0 80% 85%;
-    --md-sys-color-on-error: 0 60% 25%;
-    --md-sys-color-error-container: 0 60% 40%;
-    --md-sys-color-on-error-container: 0 80% 90%;
-    --md-sys-color-background: 240 10% 10%;
-    --md-sys-color-on-background: 0 0% 90%;
-    --md-sys-color-surface: 240 10% 18%;
-    --md-sys-color-on-surface: 0 0% 90%;
-    --md-sys-color-surface-variant: 240 10% 30%;
-    --md-sys-color-on-surface-variant: 240 10% 80%;
-    --md-sys-color-surface-container-low: 240 10% 22%;
-    --md-sys-color-surface-container-highest: 240 10% 35%;
-    --md-sys-color-outline: 240 10% 60%;
-    --md-sys-color-outline-variant: 240 10% 40%;
+    --md-sys-color-primary: 251 70% 65%;
+    --md-sys-color-on-primary: 250 40% 20%;
+    --md-sys-color-primary-container: 250 40% 30%;
+    --md-sys-color-on-primary-container: 250 80% 90%;
+    --md-sys-color-secondary: 250 20% 70%;
+    --md-sys-color-on-secondary: 250 20% 15%;
+    --md-sys-color-secondary-container: 250 20% 25%;
+    --md-sys-color-on-secondary-container: 250 20% 90%;
+    --md-sys-color-tertiary: 340 70% 70%;
+    --md-sys-color-on-tertiary: 340 40% 15%;
+    --md-sys-color-tertiary-container: 340 40% 30%;
+    --md-sys-color-on-tertiary-container: 340 80% 90%;
+    --md-sys-color-error: 0 80% 70%;
+    --md-sys-color-on-error: 0 60% 15%;
+    --md-sys-color-error-container: 0 60% 30%;
+    --md-sys-color-on-error-container: 0 80% 85%;
+    --md-sys-color-background: 246 16% 98%;
+    --md-sys-color-on-background: 240 10% 10%;
+    --md-sys-color-surface: 246 16% 98%;
+    --md-sys-color-on-surface: 240 10% 10%;
+    --md-sys-color-surface-variant: 240 10% 90%;
+    --md-sys-color-on-surface-variant: 240 10% 30%;
+    --md-sys-color-surface-container-low: 246 16% 95%;
+    --md-sys-color-surface-container-highest: 240 10% 90%;
+    --md-sys-color-outline: 240 10% 50%;
+    --md-sys-color-outline-variant: 240 10% 80%;
     --md-sys-color-shadow: 0 0% 0%;
-    --md-sys-color-inverse-primary: 251 70% 65%;
-    --md-sys-color-inverse-on-primary: 250 40% 20%;
-    --md-sys-color-inverse-surface: 0 0% 90%;
-    --md-sys-color-inverse-on-surface: 240 10% 10%;
+    --md-sys-color-inverse-primary: 251 100% 90%;
+    --md-sys-color-inverse-on-primary: 250 40% 30%;
+    --md-sys-color-inverse-surface: 240 10% 20%;
+    --md-sys-color-inverse-on-surface: 0 0% 95%;
 
     /* ShadCN Theme */
     --background: var(--md-sys-color-background);
@@ -78,37 +78,37 @@
 
   .dark {
     /* M3 Theme - Dark */
-    --md-sys-color-primary: 251 70% 65%;
-    --md-sys-color-on-primary: 250 40% 20%;
-    --md-sys-color-primary-container: 250 40% 30%;
-    --md-sys-color-on-primary-container: 250 80% 90%;
-    --md-sys-color-secondary: 250 20% 70%;
-    --md-sys-color-on-secondary: 250 20% 15%;
-    --md-sys-color-secondary-container: 250 20% 25%;
-    --md-sys-color-on-secondary-container: 250 20% 90%;
-    --md-sys-color-tertiary: 340 70% 70%;
-    --md-sys-color-on-tertiary: 340 40% 15%;
-    --md-sys-color-tertiary-container: 340 40% 30%;
-    --md-sys-color-on-tertiary-container: 340 80% 90%;
-    --md-sys-color-error: 0 80% 70%;
-    --md-sys-color-on-error: 0 60% 15%;
-    --md-sys-color-error-container: 0 60% 30%;
-    --md-sys-color-on-error-container: 0 80% 85%;
-    --md-sys-color-background: 246 16% 98%;
-    --md-sys-color-on-background: 240 10% 10%;
-    --md-sys-color-surface: 246 16% 98%;
-    --md-sys-color-on-surface: 240 10% 10%;
-    --md-sys-color-surface-variant: 240 10% 90%;
-    --md-sys-color-on-surface-variant: 240 10% 30%;
-    --md-sys-color-surface-container-low: 246 16% 95%;
-    --md-sys-color-surface-container-highest: 240 10% 90%;
-    --md-sys-color-outline: 240 10% 50%;
-    --md-sys-color-outline-variant: 240 10% 80%;
+    --md-sys-color-primary: 251 100% 90%;
+    --md-sys-color-on-primary: 250 40% 30%;
+    --md-sys-color-primary-container: 250 40% 40%;
+    --md-sys-color-on-primary-container: 250 80% 95%;
+    --md-sys-color-secondary: 250 20% 85%;
+    --md-sys-color-on-secondary: 250 20% 25%;
+    --md-sys-color-secondary-container: 250 20% 40%;
+    --md-sys-color-on-secondary-container: 250 20% 95%;
+    --md-sys-color-tertiary: 340 100% 90%;
+    --md-sys-color-on-tertiary: 340 40% 30%;
+    --md-sys-color-tertiary-container: 340 40% 45%;
+    --md-sys-color-on-tertiary-container: 340 80% 95%;
+    --md-sys-color-error: 0 80% 85%;
+    --md-sys-color-on-error: 0 60% 25%;
+    --md-sys-color-error-container: 0 60% 40%;
+    --md-sys-color-on-error-container: 0 80% 90%;
+    --md-sys-color-background: 240 10% 10%;
+    --md-sys-color-on-background: 0 0% 90%;
+    --md-sys-color-surface: 240 10% 18%;
+    --md-sys-color-on-surface: 0 0% 90%;
+    --md-sys-color-surface-variant: 240 10% 30%;
+    --md-sys-color-on-surface-variant: 240 10% 80%;
+    --md-sys-color-surface-container-low: 240 10% 22%;
+    --md-sys-color-surface-container-highest: 240 10% 35%;
+    --md-sys-color-outline: 240 10% 60%;
+    --md-sys-color-outline-variant: 240 10% 40%;
     --md-sys-color-shadow: 0 0% 0%;
-    --md-sys-color-inverse-primary: 251 100% 90%;
-    --md-sys-color-inverse-on-primary: 250 40% 30%;
-    --md-sys-color-inverse-surface: 240 10% 20%;
-    --md-sys-color-inverse-on-surface: 0 0% 95%;
+    --md-sys-color-inverse-primary: 251 70% 65%;
+    --md-sys-color-inverse-on-primary: 250 40% 20%;
+    --md-sys-color-inverse-surface: 0 0% 90%;
+    --md-sys-color-inverse-on-surface: 240 10% 10%;
   }
 }
 
