@@ -5,26 +5,31 @@ import { Shield, Users } from 'lucide-react'
 
 export default function FeaturesSection() {
     return (
-        <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent">
+        <section className="bg-gray-50 py-16 md:py-24 dark:bg-transparent">
+            <div className="text-center space-y-2 -mt-20">
+                <h2 className="text-3xl font-bold tracking-tight">Why Choose Darzi AI?</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                    Powerful tools to edit, analyze, and optimize your resume using AI, all in one suite.
+                </p>
+            </div>
             <div className="mx-auto max-w-5xl px-6">
                 <div className="relative">
                     <div className="relative z-10 grid grid-cols-6 gap-3">
                         <Card className="relative col-span-full flex overflow-hidden lg:col-span-2">
                             <CardContent className="relative m-auto size-fit pt-6">
                                 <div className="relative flex h-24 w-56 items-center">
-                                    <svg
-                                        className="text-muted absolute inset-0 size-full"
-                                        viewBox="0 0 254 104"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M112.891 97.7022C140.366 97.0802 171.004 94.6715 201.087 87.5116C210.43 85.2881 219.615 82.6412 228.284 78.2473C232.198 76.3179 235.905 73.9942 239.348 71.3124C241.85 69.2557 243.954 66.7571 245.555 63.9408C249.34 57.3235 248.281 50.5341 242.498 45.6109C239.033 42.7237 235.228 40.2703 231.169 38.3054C219.443 32.7209 207.141 28.4382 194.482 25.534C184.013 23.1927 173.358 21.7755 162.64 21.2989C161.376 21.3512 160.113 21.181 158.908 20.796C158.034 20.399 156.857 19.1682 156.962 18.4535C157.115 17.8927 157.381 17.3689 157.743 16.9139C158.104 16.4588 158.555 16.0821 159.067 15.8066C160.14 15.4683 161.274 15.3733 162.389 15.5286C179.805 15.3566 196.626 18.8373 212.998 24.462C220.978 27.2494 228.798 30.4747 236.423 34.1232C240.476 36.1159 244.202 38.7131 247.474 41.8258C254.342 48.2578 255.745 56.9397 251.841 65.4892C249.793 69.8582 246.736 73.6777 242.921 76.6327C236.224 82.0192 228.522 85.4602 220.502 88.2924C205.017 93.7847 188.964 96.9081 172.738 99.2109C153.442 101.949 133.993 103.478 114.506 103.79C91.1468 104.161 67.9334 102.97 45.1169 97.5831C36.0094 95.5616 27.2626 92.1655 19.1771 87.5116C13.839 84.5746 9.1557 80.5802 5.41318 75.7725C-0.54238 67.7259 -1.13794 59.1763 3.25594 50.2827C5.82447 45.3918 9.29572 41.0315 13.4863 37.4319C24.2989 27.5721 37.0438 20.9681 50.5431 15.7272C68.1451 8.8849 86.4883 5.1395 105.175 2.83669C129.045 0.0992292 153.151 0.134761 177.013 2.94256C197.672 5.23215 218.04 9.01724 237.588 16.3889C240.089 17.3418 242.498 18.5197 244.933 19.6446C246.627 20.4387 247.725 21.6695 246.997 23.615C246.455 25.1105 244.814 25.5605 242.63 24.5811C230.322 18.9961 217.233 16.1904 204.117 13.4376C188.761 10.3438 173.2 8.36665 157.558 7.52174C129.914 5.70776 102.154 8.06792 75.2124 14.5228C60.6177 17.8788 46.5758 23.2977 33.5102 30.6161C26.6595 34.3329 20.4123 39.0673 14.9818 44.658C12.9433 46.8071 11.1336 49.1622 9.58207 51.6855C4.87056 59.5336 5.61172 67.2494 11.9246 73.7608C15.2064 77.0494 18.8775 79.925 22.8564 82.3236C31.6176 87.7101 41.3848 90.5291 51.3902 92.5804C70.6068 96.5773 90.0219 97.7419 112.891 97.7022Z"
+                                    <div className="relative flex h-24 w-56 items-center">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 640 640"
+                                            className="mx-auto h-16 w-16 text-primary"
                                             fill="currentColor"
-                                        />
-                                    </svg>
-                                    <span className="mx-auto block w-fit text-5xl font-semibold">100%</span>
+                                        >
+                                            <path d="M304 112L192 112C183.2 112 176 119.2 176 128L176 512C176 520.8 183.2 528 192 528L448 528C456.8 528 464 520.8 464 512L464 272L376 272C336.2 272 304 239.8 304 200L304 112zM444.1 224L352 131.9L352 200C352 213.3 362.7 224 376 224L444.1 224zM128 128C128 92.7 156.7 64 192 64L325.5 64C342.5 64 358.8 70.7 370.8 82.7L493.3 205.3C505.3 217.3 512 233.6 512 250.6L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 128z"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <h2 className="mt-6 text-center text-3xl font-semibold">Customizable</h2>
+                                <h2 className="mt-6 text-center text-3xl font-semibold">AI-Powered Resume Builder</h2>
                             </CardContent>
                         </Card>
                         <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
@@ -83,8 +88,8 @@ export default function FeaturesSection() {
                                     </svg>
                                 </div>
                                 <div className="relative z-10 mt-6 space-y-2 text-center">
-                                    <h2 className="group-hover:text-secondary-950 text-lg font-medium transition dark:text-white">Secure by default</h2>
-                                    <p className="text-foreground">Provident fugit and vero voluptate. magnam magni doloribus dolores voluptates a sapiente nisi.</p>
+                                    <h2 className="group-hover:text-secondary-950 text-lg font-medium transition dark:text-white">ATS Optimization</h2>
+                                    <p className="text-foreground">Ensure your resume passes Applicant Tracking Systems (ATS) with tailored formatting and keyword analysis.</p>
                                 </div>
                             </CardContent>
                         </Card>
@@ -175,8 +180,8 @@ export default function FeaturesSection() {
                                     </svg>
                                 </div>
                                 <div className="relative z-10 mt-14 space-y-2 text-center">
-                                    <h2 className="text-lg font-medium transition">Faster than light</h2>
-                                    <p className="text-foreground">Provident fugit vero voluptate. magnam magni doloribus dolores voluptates inventore nisi.</p>
+                                    <h2 className="text-lg font-medium transition">Resume Parsing & Insights</h2>
+                                    <p className="text-foreground">Extract key information and get improvement suggestions with our intelligent parser.</p>
                                 </div>
                             </CardContent>
                         </Card>
@@ -190,8 +195,8 @@ export default function FeaturesSection() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Faster than light</h2>
-                                        <p className="text-foreground">Provident fugit vero voluptate. Voluptates a sapiente inventore nisi.</p>
+                                        <h2 className="group-hover:text-secondary-950 text-lg font-medium text-zinc-800 transition dark:text-white">Job-Specific Resume Tailoring</h2>
+                                        <p className="text-foreground">Automatically align your resume to specific job descriptions for better matching.</p>
                                     </div>
                                 </div>
                                 <div className="rounded-tl-(--radius) relative -mb-6 -mr-6 mt-6 h-fit border-l border-t p-6 py-6 sm:ml-6">
@@ -244,15 +249,19 @@ export default function FeaturesSection() {
                         <Card className="card variant-outlined relative col-span-full overflow-hidden lg:col-span-3">
                             <CardContent className="grid h-full pt-6 sm:grid-cols-2">
                                 <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
-                                    <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
-                                        <Users
-                                            className="m-auto size-6"
-                                            strokeWidth={1}
-                                        />
+                                    <div className="relative flex aspect-square size-12 rounded-full border bg-muted dark:border-white/10">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                viewBox="0 0 640 640"
+                                                className="m-auto size-6 text-muted-foreground"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M416 208C416 305.2 330 384 224 384C197.3 384 171.9 379 148.8 370L67.2 413.2C57.9 418.1 46.5 416.4 39 409C31.5 401.6 29.8 390.1 34.8 380.8L70.4 313.6C46.3 284.2 32 247.6 32 208C32 110.8 118 32 224 32C330 32 416 110.8 416 208zM416 576C321.9 576 243.6 513.9 227.2 432C347.2 430.5 451.5 345.1 463 229.3C546.3 248.5 608 317.6 608 400C608 439.6 593.7 476.2 569.6 505.6L605.2 572.8C610.1 582.1 608.4 593.5 601 601C593.6 608.5 582.1 610.2 572.8 605.2L491.2 562C468.1 571 442.7 576 416 576z"/>
+                                            </svg>
                                     </div>
                                     <div className="space-y-2">
-                                        <h2 className="text-lg font-medium transition">Keep your loved ones safe</h2>
-                                        <p className="text-foreground">Voluptate. magnam magni doloribus dolores voluptates a sapiente inventore nisi.</p>
+                                        <h2 className="text-lg font-medium transition">Real-Time Score & Feedback</h2>
+                                        <p className="text-foreground">Get an AI-powered score and actionable feedback to enhance your resume impact.</p>
                                     </div>
                                 </div>
                                 <div className="before:bg-(--color-border) relative mt-6 before:absolute before:inset-0 before:mx-auto before:w-px sm:-my-6 sm:-mr-6">
@@ -262,7 +271,7 @@ export default function FeaturesSection() {
                                             <div className="ring-background size-7 ring-4">
                                                 <img
                                                     className="size-full rounded-full"
-                                                    src="https://avatars.githubusercontent.com/u/102558960?v=4"
+                                                    src=""
                                                     alt=""
                                                 />
                                             </div>
@@ -271,7 +280,7 @@ export default function FeaturesSection() {
                                             <div className="ring-background size-8 ring-4">
                                                 <img
                                                     className="size-full rounded-full"
-                                                    src="https://avatars.githubusercontent.com/u/47919550?v=4"
+                                                    src=""
                                                     alt=""
                                                 />
                                             </div>
@@ -282,7 +291,7 @@ export default function FeaturesSection() {
                                             <div className="ring-background size-7 ring-4">
                                                 <img
                                                     className="size-full rounded-full"
-                                                    src="https://avatars.githubusercontent.com/u/31113941?v=4"
+                                                    src=""
                                                     alt=""
                                                 />
                                             </div>
