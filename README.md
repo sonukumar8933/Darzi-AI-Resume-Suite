@@ -67,36 +67,27 @@ Before running this project, make sure you have the following installed:
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/VIT-Bhopal-AI-Innovators-Hub/Darzi-AI-Resume-Suite
-cd Darzi-AI-Resume-Suite
-```
+Open the Command line or Terminal.
 
-### 2. Frontend Setup
+1.  **Fork the project**
+    -   Start by forking the repository to your own GitHub account. Click the "Fork" button at the top right of the main repository page. This creates a copy of the project under your username.
 
-```bash
-# Navigate to frontend directory
-cd frontend
+2.  **Clone your forked repository**
+    -   Replace `[username]` with your actual GitHub username in the command below.
+    ```bash
+    git clone [https://github.com/](https://github.com/)[username]/Darzi-AI-Resume-Suite
+    ```
 
-# Install dependencies
-npm install
-# or
-pnpm install
+3.  **Move to the project folder**
+    ```bash
+    cd Darzi-AI-Resume-Suite
+    ```
 
-# Start the development server
-npm run dev
-# or
-pnpm dev
-```
-
-The frontend will be available at [http://localhost:3000](http://localhost:3000)
-
-### 3. Backend Setup
-```bash
-# Not yet active
-```
+4.  **Open with VSCode**
+    ```bash
+    code .
+    ```
 
 ## 🤝 Contributing
 
