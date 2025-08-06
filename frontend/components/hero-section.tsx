@@ -31,9 +31,7 @@ const transitionVariants: { item: Variants } = {
 export default function HeroSection() {
     return (
         <>
-            {/* Hero Section with Grid Background */}
             <div className="min-h-screen w-full bg-black relative">
-                {/* Black Basic Grid Background */}
                 <div
                     className="absolute inset-0 z-0"
                     style={{
@@ -45,8 +43,6 @@ export default function HeroSection() {
                         backgroundSize: "40px 40px",
                     }}
                 />
-                
-                {/* Content with relative positioning to appear above background */}
                 <div className="relative z-10">
                     <HeroHeader />
                     <main className="overflow-hidden">
@@ -154,7 +150,7 @@ export default function HeroSection() {
                                                     asChild
                                                     size="lg"
                                                     className="rounded-xl px-5 text-base">
-                                                    <Link href="#link">
+                                                    <Link href="/Dashboard">
                                                         <span className="text-nowrap">Dashboard</span>
                                                     </Link>
                                                 </Button>
