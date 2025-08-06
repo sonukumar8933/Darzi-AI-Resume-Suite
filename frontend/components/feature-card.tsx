@@ -291,12 +291,12 @@ export default function FeaturesSection() {
                       <span className="block h-fit rounded border px-2 py-1 text-xs shadow-sm">
                         Likeur
                       </span>
-                      <div className="size-9 bg-black rounded rounded-sm flex items-center justify-center">
+                      <div className="size-9 bg-black rounded-sm flex items-center justify-center">
                         <Users className="size-5" strokeWidth={1} />
                       </div>
                     </div>
                     <div className="relative ml-[calc(50%-1rem)] flex items-center gap-2">
-                      <div className="size-9 bg-black rounded rounded-sm flex items-center justify-center">
+                      <div className="size-9 bg-black rounded-sm flex items-center justify-center">
                         <Users className="size-5" strokeWidth={1} />
                       </div>
                       <span className="block h-fit rounded border px-2 py-1 text-xs shadow-sm">
@@ -307,7 +307,7 @@ export default function FeaturesSection() {
                       <span className="block h-fit rounded border px-2 py-1 text-xs shadow-sm">
                         B. Ng
                       </span>
-                      <div className="size-9 bg-black rounded rounded-sm flex items-center justify-center">
+                      <div className="size-9 bg-black rounded-sm flex items-center justify-center">
                         <Users className="size-5" strokeWidth={1} />
                       </div>
                     </div>
