@@ -3,7 +3,6 @@ import { Logo } from "@/components/logo";
 import {
   Home,
   FileText,
-  BarChart3,
   User,
   Settings,
   HelpCircle,
