@@ -3,8 +3,9 @@ from typing import Optional
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
+from utils import ResumeParser
 
-# MCP_ENDPOINT = "http://localhost:7860/mcp/"
+
 MCP_ENDPOINT = "https://vit-bhopal-ai-innovators-hub-darzi-mcp-server.hf.space/mcp/"
 
 app = FastAPI(title="Darzi Backend API")

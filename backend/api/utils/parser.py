@@ -1,10 +1,10 @@
-import warnings
 import re
+import warnings
 from pathlib import Path
 from typing import Dict, List, Any
 
-import PyPDF2
 import spacy
+import PyPDF2
 from spacy.matcher import Matcher
 
 warnings.filterwarnings("ignore", category=UserWarning)
