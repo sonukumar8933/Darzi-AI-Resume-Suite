@@ -1,4 +1,4 @@
-FROM python:3.11.10
+FROM python:3.12.6
 
 WORKDIR /code
 
@@ -8,7 +8,7 @@ RUN uv venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 COPY . .
-RUN uv sync
+RUN uv pip install -e .
 
 ENV PORT=7860
 EXPOSE $PORT
