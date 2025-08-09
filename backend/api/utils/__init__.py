@@ -1,3 +1,3 @@
-from parser import ResumeParser
+from .parser import ResumeParser
 
 __all__ = ["ResumeParser"]
