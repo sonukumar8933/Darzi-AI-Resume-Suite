@@ -6,13 +6,15 @@ colorTo: yellow
 sdk: docker
 ---
 
-Deployment Link: [https://vit-bhopal-ai-innovators-hub-darzi-mcp-server.hf.space](https://vit-bhopal-ai-innovators-hub-darzi-mcp-server.hf.space)
 
 # MCP Backend API
 This directory contains the source code for the backend API, built using FastMCP.
 
-## Setup
+### Important Links
+- HuggingFace Repo: [https://huggingface.co/spaces/VIT-Bhopal-AI-Innovators-Hub/darzi-mcp-server](https://huggingface.co/spaces/VIT-Bhopal-AI-Innovators-Hub/darzi-mcp-server)
+- Deployment Link: [https://vit-bhopal-ai-innovators-hub-darzi-mcp-server.hf.space](https://vit-bhopal-ai-innovators-hub-darzi-mcp-server.hf.space)
 
+## Setup
 Using the provided Dockerfile, you can easily build and run the API container.
 
 1. Build the Docker image:

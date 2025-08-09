@@ -6,10 +6,13 @@ colorTo: yellow
 sdk: docker
 ---
 
-Deployment Link: [https://vit-bhopal-ai-innovators-hub-darzi-api-server.hf.space](https://vit-bhopal-ai-innovators-hub-darzi-api-server.hf.space)
 
 # Backend API
 This directory contains the source code for the backend API, built using FastAPI.
+
+### Important Links
+- HuggingFace Repo: [https://huggingface.co/spaces/VIT-Bhopal-AI-Innovators-Hub/darzi-api-server](https://huggingface.co/spaces/VIT-Bhopal-AI-Innovators-Hub/darzi-api-server)
+- Deployment Link: [https://vit-bhopal-ai-innovators-hub-darzi-api-server.hf.space](https://vit-bhopal-ai-innovators-hub-darzi-api-server.hf.space)
 
 ## Setup
 
