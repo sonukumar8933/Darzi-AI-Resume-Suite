@@ -13,4 +13,4 @@ RUN uv sync
 ENV PORT=7860
 EXPOSE $PORT
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uv", "run", "main.py"]

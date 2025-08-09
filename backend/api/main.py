@@ -1,3 +1,4 @@
+import uvicorn
 from fastmcp import Client
 from typing import Optional
 from fastapi import FastAPI, Request, HTTPException
@@ -43,3 +44,7 @@ async def parse_plain(request: Request):
 
     result = await client.call_tool("extract_data", {"text": text})
     return result
+
+
+if __name__=="__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=7860)
