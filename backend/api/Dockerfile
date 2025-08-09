@@ -13,4 +13,4 @@ RUN uv pip install -e .
 ENV PORT=7860
 EXPOSE $PORT
 
-CMD ["uv", "run", "main.py"]
+CMD ["python", "main.py"]
