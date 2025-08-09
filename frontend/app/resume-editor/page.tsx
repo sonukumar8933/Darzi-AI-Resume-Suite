@@ -546,7 +546,7 @@ export default function ResumeEditorPage() {
                         .join(' • ')}
                     </p>
                     <h3 className="font-semibold text-sm tracking-wide mb-2">
-                      {/* Removed static EXPERIENCE heading */}
+                      {/* Dynamic heading */}
                     </h3>
                     <div className="space-y-6">
                       {sections.map(section => (
@@ -590,7 +590,7 @@ export default function ResumeEditorPage() {
                         </div>
                       ))}
                     </div>
-                    {/* ...rest of preview unchanged... */}
+                    {/* we can leave the rest of preview unchanged */}
                   </div>
                 </section>
               </div>
