@@ -3,12 +3,13 @@ import { Logo } from "@/components/logo";
 import {
   Home,
   FileText,
-  User,
-  Settings,
+  // User,
+  // Settings,
   HelpCircle,
   Menu,
   Target,
-  LayoutTemplate,
+  // LayoutTemplate,
+  BarChart3
 } from "lucide-react";
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -22,10 +23,11 @@ const NavItem = ({
 }: {
   icon: React.ReactElement;
   children: React.ReactNode;
+  href: string;
   active?: boolean;
   isCollapsed?: boolean;
-  href: string;
 }) => (
+
   <Link
     href={href}
     className={`flex items-center px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300 ${
@@ -127,6 +129,7 @@ export default function Sidebar({
         {/* Navigation - Scrollable area */}
         <div className="flex-1 overflow-y-auto custom-scrollbar">
           <nav className="space-y-2">
+
             <NavItem icon={<Home />} href="/Dashboard" active={pathname === '/Dashboard'} isCollapsed={isCollapsed}>
               Dashboard
             </NavItem>
@@ -134,18 +137,20 @@ export default function Sidebar({
               Resume Editor
             </NavItem>
             <DisabledNavItem icon={<Target />} label="ATS Checker" isCollapsed={isCollapsed} />
-            <DisabledNavItem icon={<LayoutTemplate />} label="Templates" isCollapsed={isCollapsed} />
-            {/* Account section - always stays below main nav items
+            <NavItem icon={<BarChart3 />} href="/templates" active={pathname === '/templates'} isCollapsed={isCollapsed}>
+              Templates
+            </NavItem>
+            {/* Account section - always stays below main nav item
             <div className="mt-6">
               {!isCollapsed && (
                 <p className="text-xs font-bold uppercase text-gray-500 mb-2 px-4 whitespace-nowrap">
                   Account
                 </p>
               )}
-              <NavItem icon={<User />} isCollapsed={isCollapsed}>
+              <NavItem icon={<User />} href="/Dashboard" isCollapsed={isCollapsed}>
                 Profile
               </NavItem>
-              <NavItem icon={<Settings />} isCollapsed={isCollapsed}>
+              <NavItem icon={<Settings />} href="/Dashboard" isCollapsed={isCollapsed}>
                 Settings
               </NavItem> */}
           </nav>
