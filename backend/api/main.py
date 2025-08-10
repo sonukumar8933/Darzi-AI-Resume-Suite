@@ -5,13 +5,28 @@ from fastmcp import Client
 from typing import Optional
 from fastapi import FastAPI, Request, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
 
 from utils import ResumeParser
 
 
 MCP_ENDPOINT = "https://vit-bhopal-ai-innovators-hub-darzi-mcp-server.hf.space/mcp/"
 
-app = FastAPI(title="Darzi Backend API")
+client: Optional[Client] = None
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    global client
+    client = Client(MCP_ENDPOINT)
+    await client.__aenter__()
+    yield
+    # Shutdown
+    if client:
+        await client.__aexit__(None, None, None)
+        client = None
+
+app = FastAPI(title="Darzi Backend API", lifespan=lifespan)
 origins = ["*"] # needs to changed in prod
 app.add_middleware(
     CORSMiddleware,
@@ -24,21 +39,20 @@ app.add_middleware(
 # Initialize local parser
 resume_parser = ResumeParser()
 
+@app.get("/")
+async def root():
+    """Root endpoint - health check"""
+    return {"status": "ok", "message": "Darzi Backend API is running"}
 
-client: Optional[Client] = None
-
-@app.on_event("startup")
-async def startup():
-    global client
-    client = Client(MCP_ENDPOINT)
-    await client.__aenter__()
-
-@app.on_event("shutdown")
-async def shutdown():
-    global client
-    if client:
-        await client.__aexit__(None, None, None)
-        client = None
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
+    return {
+        "status": "healthy",
+        "service": "Darzi Backend API",
+        "version": "0.1.0",
+        "endpoints": ["/parse", "/parse-pdf", "/docs"]
+    }
 
 @app.post("/parse")
 async def parse_plain(request: Request):
